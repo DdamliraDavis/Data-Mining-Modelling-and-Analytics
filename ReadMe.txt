@@ -1,14 +1,15 @@
-# DSC8307 Data Mining, Modelling and Analytics – Assignment 1
+# DSC8307 Data Mining, Modelling and Analytics – Assignment 2
 
-Notebooks - project1_bank.ipynb and project2_concrete.ipynb
-Dataset - Bank marketing: predicting term-deposit subscription bank-additional-full.csv and Predicting concrete compressive strength Concrete_Data.csv
+Notebooks - project1_wholesale.ipynb and project2_creditcard.ipynb
+Dataset - Segmenting wholesale customers by spending behaviour wholesale-customers.csv and Credit card fraud detection as anomaly ranking creditcard.csv (stored as four compressed parts, creditcard_part*.csv.gz)
 
 # How to run
- -Clone this repository (the two CSV files are in the repository root, next to the notebooks).
+ -Clone this repository (the data files are in the repository root, next to the notebooks).
  -Install the dependencies (Python 3.10 or later): - pip install -r requirements.txt
  -Open each notebook in VS Code and choose **Run All**. Each notebook runs from top to bottom in a few minutes
+ -The credit card file (150 MB) is too large for GitHub, so it is split into four compressed parts. The notebook reads creditcard.csv if it is present, otherwise it joins the parts automatically
 
 ## Data sources
 
-- Bank Marketing: UCI Machine Learning Repository. S. Moro, P. Cortez and P. Rita (2014), "A Data-Driven Approach to Predict the Success of Bank Telemarketing", *Decision Support Systems* 62, 22–31.
-- Concrete Compressive Strength: UCI Machine Learning Repository. I-C. Yeh (1998), "Modeling of strength of high-performance concrete using artificial neural networks", *Cement and Concrete Research* 28(12), 1797–1808.
+- Wholesale Customers: UCI Machine Learning Repository. M. Cardoso (2014), *Wholesale customers*.
+- Credit Card Fraud Detection: Kaggle, collected by Worldline and the Machine Learning Group of ULB. A. Dal Pozzolo, O. Caelen, R. A. Johnson and G. Bontempi (2015), "Calibrating Probability with Undersampling for Unbalanced Classification", *IEEE Symposium on Computational Intelligence and Data Mining (CIDM)*.
